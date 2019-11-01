@@ -23,7 +23,7 @@ def directors_totals(nds)
     money.push(adding_money)
     row_index +=1
   end
-results = {name => money}
+results = Hash{name => money}
 results
 
 end
