@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 
 def directors_totals(nds)
-  pp nds
+  # pp nds
   #row_index is each hash element in array of directors
   row_index = 0
   name = []
@@ -23,7 +23,6 @@ def directors_totals(nds)
     money.push(adding_money)
     row_index +=1
   end
-results = Hash{name => money}
+results = Hash[name.zip money]
 results
-
 end
