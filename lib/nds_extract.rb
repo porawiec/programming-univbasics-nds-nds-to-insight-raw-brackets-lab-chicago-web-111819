@@ -17,12 +17,13 @@ def directors_totals(nds)
     name.push(nds[row_index][:name])
     grand_total_dir = 0
     while column_index < nds[row_index].length do
-      adding_money += nds[row_index][:movies][column_index]
+      adding_money += nds[row_index][:movies][column_index][:worldwide_gross]
     column_index +=1
     end
-  
+    money.push(adding_money)
     row_index +=1
   end
-
+p name
+p money
   
 end
