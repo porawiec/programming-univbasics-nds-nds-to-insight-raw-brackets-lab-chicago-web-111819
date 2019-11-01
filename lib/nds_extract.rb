@@ -21,6 +21,7 @@ def directors_totals(nds)
     column_index +=1
     end
     money.push(adding_money)
+    adding_money = 0
     row_index +=1
   end
 results = Hash[name.zip money]
